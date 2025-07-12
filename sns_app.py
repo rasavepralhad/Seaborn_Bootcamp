@@ -13,8 +13,8 @@ st.write('This is a simple app to visualize the tips dataset using Seaborn.')
 # Function to create and display plot
 def display_plot(title, plot_func):
     st.subheader(title)
-    fig, ax = plt.subplots(figsize=(8, 6))  # ✅ Fixed this line
-    plot_func(ax)                           # ✅ Call the specific plot function
+    fig, ax = plt.subplots(figsize=(8, 6)) 
+    plot_func(ax)                           
     st.pyplot(fig)
     plt.close(fig)
 
